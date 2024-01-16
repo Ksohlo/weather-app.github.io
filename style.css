@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;800;900&display=swap');
+
+:root{
+    --color_mint: rgb(71, 249, 255);
+    --color_blue: rgb(85, 41, 157);
+    --color_white: rgb(250, 250, 250);
+    --color_black: rgb(65, 65, 65);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color_black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-container{
+    width: 320px;
+    height: auto;
+    background: linear-gradient(140deg, var(--color_mint), var(--color_blue));
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#input{
+    width: 100%;
+    height: 40px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#input-el{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+#input-container{
+    width: 82%;
+    height: 100%;
+    background-color: var(--color_white);
+    border-radius: 20px;
+}
+
+#search{
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_white);
+}
+#search:hover{
+    box-shadow: 0 0 10px var(--color_white);
+}
+#search:active{
+    transform: scale(1.05);
+}
+
+#search-logo{
+    width: 20px;
+    height: 20px;
+}
+
+#err{
+    color: var(--color_white);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.mid{
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather-logo{
+    width: 120px;
+}
+
+.mid h2{
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--color_white);
+}
+
+.mid h3{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 5px;
+    color: var(--color_white);
+}
+
+#bottom{
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#left{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color_white);
+}
+#humidity{
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+    margin-right: 10px;
+    filter: invert(1)
+}
+
+.humidity{
+    font-weight: 300;
+    color: var(-- color-white);
+}
+
+#right{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color_white);
+}
+
+#wind{
+    width: 35px;
+    height: 28px;
+    margin: auto 0;
+    margin-right: 5px;
+}
+
+#right h3{
+    font-weight: 300;
+}
+
+#bottom p{
+    font-size: 0.8rem;
+}
+
